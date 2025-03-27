@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Heatwood";
+  src: url("fonts/Heatwood.eot");
+  src: url("fonts/Heatwood.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Heatwood.woff2") format("woff2"),
+    url("fonts/Heatwood.woff") format("woff"),
+    url("fonts/Heatwood.ttf") format("truetype"),
+    url("fonts/Heatwood.svg#Heatwood") format("svg");
+}

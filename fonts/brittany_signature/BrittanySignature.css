@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Brittany Signature";
+  src: url("BrittanySignature.eot");
+  src: url("BrittanySignature.eot?#iefix") format("embedded-opentype"),
+    url("BrittanySignature.woff2") format("woff2"),
+    url("BrittanySignature.woff") format("woff"),
+    url("BrittanySignature.ttf") format("truetype"),
+    url("BrittanySignature.svg#Brittany Signature") format("svg");
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Hoppipola";
+  src: url("hoppipola-regular-400.eot");
+  src: url("hoppipola-regular-400.eot?#iefix") format("embedded-opentype"),
+    url("hoppipola-regular-400.woff2") format("woff2"),
+    url("hoppipola-regular-400.woff") format("woff"),
+    url("hoppipola-regular-400.ttf") format("truetype"),
+    url("hoppipola-regular-400.svg#hoppipola") format("svg");
+}

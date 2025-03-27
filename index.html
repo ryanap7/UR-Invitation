@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="id" class="notranslate" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="color-scheme" content="light only" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="google" content="notranslate" />
+    <title>Wedding - Ulfy & Ryan</title>
+    <meta name="title" content="Wedding - WedUlfy & Ryan" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://assets.satumomen.com/images/media/428318-media-1741209484.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/plugins/animate.css@4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css"
+    />
+
+    <link
+      rel="preload"
+      as="style"
+      href="https://assets.satumomen.com/build/assets/bootstrap-vCaDZZbr.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://assets.satumomen.com/build/assets/themesv2-DZZF_N8v.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.satumomen.com/build/assets/bootstrap-vCaDZZbr.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://assets.satumomen.com/build/assets/themesv2-DZZF_N8v.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Oranienbaum&display=swap");
+      @import url("/fonts/hoppipola/fonts.css");
+      :root {
+        --inv-bg: #ffffff;
+        --inv-base: #795e22;
+        --inv-accent: #ceaf5f;
+        --inv-border: #ceaf5f;
+        --menu-bg: #8d9e82;
+        --menu-inactive: #ffffff;
+        --menu-active: #ceaf5f;
+        --btn-color: #ffffff;
+        --font-base: "Crimson Pro", serif;
+        --font-accent: "Oranienbaum", serif;
+        --font-latin: "Hoppipola", cursive;
+      }
+
+      .frame-out {
+        display: none;
+      }
+      .cover .frame-out {
+        display: block;
+      }
+      .editor-wrapper .frame-out {
+        display: none;
+      }
+    </style>
+
+    <style>
+      @import url("/fonts/brittany_signature/BrittanySignature.css");
+      @import url("/fonts/photograph_signature/fonts.css");
+      @import url("/fonts/heatwood/Heatwood.css");
+      .font-brittany-signature {
+        font-family: "Brittany Signature";
+        line-height: 1.6 !important;
+      }
+      .font-photograph-signature {
+        font-family: "Photograph Signature";
+        line-height: 1.6 !important;
+      }
+      .font-heatwood {
+        font-family: "Heatwood";
+        line-height: 3 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="app">
+      <div
+        id="modalOverlay"
+        class="modal-backdrop fade"
+        style="display: none"
+      ></div>
+
+      <!-- Loader -->
+      <div id="loader" class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <!-- music -->
+      <audio id="music" loop autoplay>
+        <source
+          src="https://assets.satumomen.com/musics/nyoman-paul-tunggu-apa-lagi-official-music-video-qul5faridxg-00-00-05-00-03-44-part.mp3"
+        />
+      </audio>
+      <!-- end music -->
+
+      <div
+        id="workspace-container"
+        class="position-fixed h-100 w-100"
+        style="overflow: hidden"
+      >
+        <div
+          id="panZoom"
+          class="position-fixed h-100 w-100"
+          style="
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: 50% 50%;
+          "
+        >
+          <div
+            class="h-100 w-100 d-flex align-items-center justify-content-center"
+          >
+            <div class="canvas not-open">
+              <!-- invitation -->
+              <div id="satuMomen">
+                <div class="satumomen_track">
+                  <ul class="satumomen_list">
+                    <li class="satumomen_slide satumomen_cover">
+                      <div
+                        class="container-mobile cover"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+                        <div
+                          style="
+                            margin: -30px;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                          "
+                        >
+                          <img
+                            src="https://assets.satumomen.com/images/galleries/440925-gallery-y1soabnj1q.gif"
+                            style="
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                              opacity: 0.3;
+                            "
+                            alt="no-image.jpg"
+                          />
+                          <img
+                            src="https://assets.satumomen.com/images/galleries/440925-gallery-QdkzoCU22q.gif"
+                            style="
+                              width: 40px;
+                              height: auto;
+                              position: absolute;
+                              bottom: 31%;
+                              left: 12%;
+                            "
+                            alt="no-image.jpg"
+                          /><img
+                            src="https://assets.satumomen.com/images/galleries/440925-gallery-ISpp0Sf46t.gif"
+                            style="
+                              width: 55px;
+                              height: auto;
+                              position: absolute;
+                              bottom: 23%;
+                              right: 20%;
+                            "
+                            alt="no-image.jpg"
+                          /><img
+                            src="https://assets.satumomen.com/images/galleries/440925-gallery-R3jWFlCyGx.gif"
+                            style="
+                              width: 40px;
+                              height: auto;
+                              position: absolute;
+                              top: 19%;
+                              right: 75%;
+                            "
+                            alt="no-image.jpg"
+                          />
+                        </div>
+                        <div
+                          class="position-relative d-flex flex-column justify-content-start align-items-center"
+                          style="height: 100%; z-index: 1"
+                        >
+                          <div style="width: 100%">
+                            <div>
+                              <div
+                                class="mb-5 mx-auto animate__animated animate__fadeInDown animate__slower image-editable"
+                                style="height: auto; width: 90%"
+                              >
+                                <img
+                                  src="./images/tagname.png"
+                                  style="width: 100%; height: 100%"
+                                  alt="no-image.jpg"
+                                />
+                              </div>
+                              <div class="text-center">
+                                <div
+                                  class="editable animate__animated animate__fadeInUp animate__slower"
+                                  style="font-size: 14.4px"
+                                >
+                                  Dear,
+                                </div>
+                                <div
+                                  id="guestNameSlot"
+                                  class="editable color-accent h5 font-weight-bold mb-4 animate__animated animate__fadeInUp animate__slower"
+                                  style="font-size: 18px"
+                                >
+                                  Tamu Undangan
+                                </div>
+                                <button
+                                  class="btn-open-invitation btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow"
+                                  style="font-size: 14px"
+                                >
+                                  Open Invitation
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="satumomen_slide">
+                      <div
+                        class="container-mobile"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+                        <div
+                          class="position-relative h-100 d-flex flex-column justify-content-start align-items-center"
+                          style="z-index: 1"
+                        >
+                          <div>
+                            <div
+                              class="mx-auto animate__animated animate__fadeInDown animate__slower image-editable"
+                              style="height: auto; width: 90%"
+                            >
+                              <img
+                                src="./images/tagname.png"
+                                style="
+                                  width: 100%;
+                                  height: 100%;
+                                  object-fit: cover;
+                                "
+                                alt="no-image.jpg"
+                              />
+                            </div>
+
+                            <div
+                              class="text-center mb-4"
+                              style="margin-top: -18px"
+                            >
+                              <div
+                                class="editable quotes mb-2 animate__animated animate__fadeIn animate__slower font-accent"
+                                style="
+                                  font-size: 16px;
+                                  line-height: 1.5;
+                                  animation-delay: 800ms;
+                                "
+                              >
+                                Pernikahan adalah menyempurnakan separuh agama.
+                                Maka bertakwalah kepada Allah dalam separuh yang
+                                tersisa.
+                              </div>
+                              <div
+                                class="editable font-italic animate__animated animate__fadeIn animate__slower"
+                                style="
+                                  font-size: 14.4px;
+                                  animation-delay: 1500ms;
+                                "
+                              >
+                                (HR. Al-Baihaqi)
+                              </div>
+                            </div>
+                            <div
+                              class="countdown-wrapper mx-auto mb-4 d-flex flex-column animate__animated animate__fadeInUp animate__slower"
+                              style="max-width: 280px; min-width: 280px"
+                            >
+                              <div class="countdown text-center">
+                                <div class="countdown-item">
+                                  <div class="number" id="days">00</div>
+                                  <div class="text">Hari</div>
+                                </div>
+                                <div class="countdown-item">
+                                  <div class="number" id="hours">00</div>
+                                  <div class="text">Jam</div>
+                                </div>
+                                <div class="countdown-item">
+                                  <div class="number" id="minutes">00</div>
+                                  <div class="text">Menit</div>
+                                </div>
+                                <div class="countdown-item">
+                                  <div class="number" id="seconds">00</div>
+                                  <div class="text">Detik</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="satumomen_slide">
+                      <div
+                        class="container-mobile"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+                        <div
+                          class="d-flex justify-content-start flex-column align-items-center"
+                          style="height: 100%"
+                        >
+                          <div style="z-index: 2">
+                            <div class="d-flex align-items-start mb-2">
+                              <div
+                                class="text-left pl-3 animate__animated animate__fadeInRight animate__slower"
+                              >
+                                <div
+                                  class="editable font-accent h5"
+                                  style="font-size: 23px"
+                                >
+                                  Ryan Aprianto, B.Comp.Sc., S.Kom.
+                                </div>
+                                <div
+                                  class="editable mb-2"
+                                  style="line-height: 1.3; font-size: 14px"
+                                >
+                                  Putra pertama dari Bapak Tasimun<br />&amp;
+                                  Ibu Rumiah
+                                </div>
+                                <a
+                                  rel="nofollow"
+                                  href="https://instagram.com/"
+                                  class="btn btn-sm link btn-primary rounded-pill"
+                                  style="
+                                    line-height: 1.3;
+                                    font-size: 14px;
+                                    background-image: url('/images/instagram.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    padding-left: 28px;
+                                    background-position: left;
+                                  "
+                                  >@ryanap17</a
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-start justify-content-center editable font-weight-bold h6 font-accent mb-2"
+                            >
+                              dengan
+                            </div>
+                            <div
+                              class="d-flex align-items-start flex-row-reverse mb-3"
+                            >
+                              <div
+                                class="text-right pr-3 animate__animated animate__fadeInLeft animate__slower"
+                              >
+                                <div
+                                  class="editable font-weight-bold h4 font-accent"
+                                  style="font-size: 23px"
+                                >
+                                  Ulfy Awaliyah
+                                </div>
+                                <div
+                                  class="editable mb-2"
+                                  style="line-height: 1.3; font-size: 14px"
+                                >
+                                  Putri pertama dari Bapak Dede Muhammad Akim
+                                  <br />&amp; Ibu Iim Fatimah
+                                </div>
+                                <a
+                                  rel="nofollow"
+                                  href="https://instagram.com/instagram"
+                                  class="btn btn-sm link btn-primary rounded-pill"
+                                  style="
+                                    line-height: 1.3;
+                                    font-size: 14px;
+                                    background-image: url('/images/instagram.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    padding-left: 28px;
+                                    background-position: left;
+                                  "
+                                  >@ulfyya_</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="satumomen_slide">
+                      <div
+                        class="container-mobile"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+                        <div
+                          class="position-relative h-100 d-flex flex-column justify-content-start align-items-center"
+                        >
+                          <div class="text-center w-100 mb-3">
+                            <div
+                              class="editable animate__animated animate__fadeInUp animate__slower font-weight-bold font-accent"
+                              style="font-size: 24px; animation-delay: 500ms"
+                            >
+                              JUMAT, 4 APRIL 2025
+                            </div>
+                          </div>
+                          <div class="text-center w-100 mb-3">
+                            <div
+                              class="mb-3 color-accent editable animate__animated animate__fadeInUp animate__slower"
+                              style="
+                                font-size: 24px;
+                                line-height: 1.2;
+                                animation-delay: 1500ms;
+                              "
+                            >
+                              Akad Nikah
+                            </div>
+                            <div
+                              class="animate__animated animate__fadeInUp animate__slower form-row align-items-center"
+                            >
+                              <div>
+                                <div
+                                  class="editable mb-2"
+                                  style="font-size: 12px"
+                                >
+                                  Scan Untuk Maps
+                                </div>
+                                <img
+                                  src="./images/QR.png"
+                                  height="90"
+                                  width="90"
+                                  alt="440925-gallery-yrtWW4GKhT.png"
+                                />
+                              </div>
+                              <div class="pl-3 text-left">
+                                <div class="editable" style="font-size: 14.4px">
+                                  11:00 WIB
+                                </div>
+                                <div class="editable" style="font-size: 14.4px">
+                                  Griya Karang Sembung Permai<br />Blok D2 No.7
+                                  RT 001 RW 009
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-center w-100">
+                            <div
+                              class="mb-3 color-accent editable animate__animated animate__fadeInUp animate__slower"
+                              style="
+                                font-size: 24px;
+                                line-height: 1.2;
+                                animation-delay: 1500ms;
+                              "
+                            >
+                              Walimatul Urs
+                            </div>
+                            <div
+                              class="animate__animated animate__fadeInUp animate__slower form-row align-items-center"
+                            >
+                              <div>
+                                <div
+                                  class="editable mb-2"
+                                  style="font-size: 12px"
+                                >
+                                  Scan Untuk Maps
+                                </div>
+                                <img
+                                  src="./images/QR.png"
+                                  height="90"
+                                  width="90"
+                                  alt="440925-gallery-naJcP8PTNG.png"
+                                />
+                              </div>
+                              <div class="pl-3 text-left">
+                                <div class="editable" style="font-size: 14.4px">
+                                  13:00 WIB - Selesai
+                                </div>
+                                <div class="editable" style="font-size: 14.4px">
+                                  Griya Karang Sembung Permai<br />Blok D2 No.7
+                                  RT 001 RW 009
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="satumomen_slide">
+                      <div
+                        class="container-mobile"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+
+                        <div
+                          class="position-relative h-100 d-flex flex-column align-items-center text-center"
+                        >
+                          <h2
+                            class="animate__animated animate__fadeInDown"
+                            style="
+                              font-size: 24px;
+                              font-weight: bold;
+                              margin-bottom: 10px;
+                            "
+                          >
+                            Kirim Hadiah 💝
+                          </h2>
+                          <p
+                            class="animate__animated animate__fadeIn animate__slow"
+                            style="font-size: 16px; max-width: 80%"
+                          >
+                            Rayakan kebahagiaan kami dengan berbagi hadiah
+                            spesial!
+                          </p>
+
+                          <div
+                            class="gift-section animate__animated animate__fadeInUp animate__slower"
+                            style="margin-top: 20px"
+                          >
+                            <h3
+                              style="
+                                font-size: 18px;
+                                font-weight: bold;
+                                margin-bottom: 5px;
+                              "
+                            >
+                              Transfer ke Rekening
+                            </h3>
+                            <p
+                              style="
+                                font-size: 16px;
+                                line-height: 1.6;
+                                margin-bottom: 8px;
+                              "
+                            >
+                              <strong>BCA:</strong> 7745441912 (a.n. Ryan
+                              Aprianto)
+                            </p>
+                            <p style="font-size: 16px; line-height: 1.6">
+                              <strong>BCA:</strong> 3041129091 (a.n. Ulfi
+                              Awaliyah)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="satumomen_slide">
+                      <div
+                        class="container-mobile"
+                        style="
+                          background-image: url(http://ourdreamday.com/themes/wedding-watercolor/bg.webp);
+                        "
+                      >
+                        <div class="frame">
+                          <img
+                            class="frame-out frame-tl animate__animated animate__slideOutLeft animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kiri.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+                          <img
+                            class="frame-out frame-tr animate__animated animate__slideOutRight animate__slower"
+                            src="/themes/wedding-watercolor/pintu-kanan.webp"
+                            alt="frame"
+                            style="
+                              z-index: 9;
+                              height: 105%;
+                              animation-delay: 500ms;
+                            "
+                          />
+
+                          <img
+                            class="frame-bl bm-1 w-100 animate__animated animate__fadeInUp"
+                            src="/themes/wedding-watercolor/bm-1.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-2 w-100 animate__animated animate__fadeInUp animate__slow"
+                            src="/themes/wedding-watercolor/bm-2.webp"
+                            alt="frame"
+                          />
+                          <img
+                            class="frame-br bm-3 w-100 animate__animated animate__fadeInUp animate__slower"
+                            src="/themes/wedding-watercolor/bm-3.webp"
+                            alt="frame"
+                          />
+                        </div>
+                        <div
+                          class="h-100 position-relative watermark d-flex justify-content-center align-items-center"
+                          style="z-index: 1"
+                        >
+                          <div>
+                            <div class="text-center">
+                              <div
+                                class="editable h4 color-accent animate__animated animate__fadeInDown animate__slow font-accent"
+                                style="font-size: 24px"
+                              >
+                                JAZAKUMULLAHU KHAIRAN
+                              </div>
+                              <div
+                                class="editable quotes mb-3 animate__animated animate__fadeInDown animate__slower"
+                                style="font-size: 14.4px"
+                              >
+                                KEHADIRAN DAN DOA RESTU ANDA MENJADI BERKAH BAGI
+                                KAMI.<br />SEMOGA ALLAH SWT MERIDHAI ACARA INI
+                                DAN MEMPERMUDAH SEGALA URUSAN KITA.
+                              </div>
+                              <div
+                                class="editable h4 color-accent animate__animated animate__fadeInDown animate__slow font-accent"
+                                style="font-size: 24px"
+                              >
+                                ULFY &amp; RYAN
+                              </div>
+                              <div
+                                class="editable animate__animated animate__fadeInDown animate__slow"
+                                style="font-size: 14.4px"
+                              >
+                                04.04.2025
+                              </div>
+
+                              <div class="watermark-placeholder mt-5"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="smMenu" class="satumomen_menu">
+                <ul class="satumomen_menu_list">
+                  <li class="satumomen_menu_item">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.144 20.782v-3.067c0-.777.632-1.408 1.414-1.413h2.875c.786 0 1.423.633 1.423 1.413v3.058c0 .674.548 1.222 1.227 1.227h1.96a3.46 3.46 0 0 0 2.444-1 3.41 3.41 0 0 0 1.013-2.422V9.866c0-.735-.328-1.431-.895-1.902l-6.662-5.29a3.115 3.115 0 0 0-3.958.071L3.467 7.963A2.474 2.474 0 0 0 2.5 9.867v8.703C2.5 20.464 4.047 22 5.956 22h1.916c.327.002.641-.125.873-.354.232-.228.363-.54.363-.864h.036Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span>Opening</span>
+                  </li>
+                  <li class="satumomen_menu_item">
+                    <i
+                      class="icon ph-fill ph-mosque"
+                      style="color: currentColor"
+                    ></i>
+                    <span>Quotes</span>
+                  </li>
+                  <li class="satumomen_menu_item">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity=".4"
+                        d="M11.776 21.837a36.258 36.258 0 0 1-6.328-4.957 12.668 12.668 0 0 1-3.03-4.805C1.278 8.535 2.603 4.49 6.3 3.288A6.282 6.282 0 0 1 12.007 4.3a6.291 6.291 0 0 1 5.706-1.012c3.697 1.201 5.03 5.247 3.893 8.787a12.67 12.67 0 0 1-3.013 4.805 36.58 36.58 0 0 1-6.328 4.957l-.25.163-.24-.163Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="m12.01 22-.234-.163a36.316 36.316 0 0 1-6.337-4.957 12.667 12.667 0 0 1-3.048-4.805c-1.13-3.54.195-7.586 3.892-8.787a6.296 6.296 0 0 1 5.728 1.023V22ZM18.23 10a.719.719 0 0 1-.517-.278.818.818 0 0 1-.167-.592c.022-.702-.378-1.341-.994-1.59-.391-.107-.628-.53-.53-.948.093-.41.477-.666.864-.573a.384.384 0 0 1 .138.052c1.236.476 2.036 1.755 1.973 3.155a.808.808 0 0 1-.23.56.708.708 0 0 1-.537.213Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span>Mempelai</span>
+                  </li>
+                  <li class="satumomen_menu_item">
+                    <i
+                      class="icon ph-fill ph-calendar-check"
+                      style="color: currentColor"
+                    ></i>
+                    <span>Acara</span>
+                  </li>
+                  <li class="satumomen_menu_item">
+                    <i
+                      class="icon ph-fill ph-gift"
+                      style="color: currentColor"
+                    ></i>
+                    <span>Gift</span>
+                  </li>
+                  <li class="satumomen_menu_item">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity=".4"
+                        d="M16.34 2H7.67C4.28 2 2 4.38 2 7.92v8.17C2 19.62 4.28 22 7.67 22h8.67c3.39 0 5.66-2.38 5.66-5.91V7.92C22 4.38 19.73 2 16.34 2Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M10.813 15.248a.872.872 0 0 1-.619-.256l-2.373-2.373a.874.874 0 1 1 1.237-1.238l1.755 1.755 4.128-4.128a.874.874 0 1 1 1.237 1.238l-4.746 4.746a.872.872 0 0 1-.619.256Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span>Terima Kasih</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- end invitation -->
+              <div class="floating-action d-flex align-items-end flex-column">
+                <button
+                  id="btnMusic"
+                  onclick="playMusic()"
+                  class="btn btn-float"
+                >
+                  <svg
+                    class="play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M184,152V104a8,8,0,0,1,16,0v48a8,8,0,0,1-16,0Zm40-72a8,8,0,0,0-8,8v80a8,8,0,0,0,16,0V88A8,8,0,0,0,224,80ZM53.92,34.62A8,8,0,1,0,42.08,45.38L73.55,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V175.09l42.08,46.29a8,8,0,1,0,11.84-10.76Zm92.16,77.59A8,8,0,0,0,160,106.83V32a8,8,0,0,0-12.91-6.31l-39.85,31a8,8,0,0,0-1,11.7Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="pause"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M160,32V224a8,8,0,0,1-12.91,6.31L77.25,176H32a16,16,0,0,1-16-16V96A16,16,0,0,1,32,80H77.25l69.84-54.31A8,8,0,0,1,160,32Zm32,64a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V104A8,8,0,0,0,192,96Zm32-16a8,8,0,0,0-8,8v80a8,8,0,0,0,16,0V88A8,8,0,0,0,224,80Z"
+                    ></path>
+                  </svg>
+                </button>
+                <button id="btnAutoplay" class="btn btn-float">
+                  <svg
+                    class="play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24Zm36.44,110.66-48,32A8.05,8.05,0,0,1,112,168a8,8,0,0,1-8-8V96a8,8,0,0,1,12.44-6.66l48,32a8,8,0,0,1,0,13.32Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="pause"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.13,104.13,0,0,0,128,24ZM112,160a8,8,0,0,1-16,0V96a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V96a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lightbox -->
+      <div id="lightboxWrapper" class="lightbox-wrapper">
+        <div class="lightbox-list"></div>
+        <a href="#" id="lightboxCloseBtn" class="btn-lightbox">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 0 1 1.414 0L10 8.586l4.293-4.293a1 1 0 1 1 1.414 1.414L11.414 10l4.293 4.293a1 1 0 0 1-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 0 1-1.414-1.414L8.586 10 4.293 5.707a1 1 0 0 1 0-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <div class="lightbox-navigation">
+          <a
+            href="#"
+            id="lightboxPrevBtn"
+            class="lightbox-arrow"
+            data-index="0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m15 19-7-7 7-7"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            id="lightboxNextBtn"
+            class="lightbox-arrow"
+            data-index="0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m9 5 7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- end lightbox -->
+
+      <div id="waterMark" class="mt-5" style="display: none">
+        <div
+          class="wm-music mt-3 text-center animate__animated animate__fadeInUp animate__slower animate__delay-1s"
+          style="font-size: 60%"
+        >
+          <div style="opacity: 0.5"><strong>Music:</strong></div>
+          <div style="opacity: 0.5">Nyoman Paul - Tunggu Apa Lagi</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- not support modal -->
+    <div
+      class="modal fade"
+      id="notSupport"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="notSupport"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 0.8rem">
+          <div
+            class="modal-body text-center justify-content-center align-items-center"
+          >
+            <h2>Pemberitahuan</h2>
+            <p>
+              Browser yang kamu gunakan mungkin kurang kompatibel. Beberapa
+              fungsi undangan ini mungkin tidak dapat berjalan dengan baik. Kami
+              merekomendasikan Chrome. Klik tombol dibawah ini untuk
+              mendownload.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://apps.apple.com/id/app/google-chrome/id535886823"
+                class="btn p-1"
+                target="_BLANK"
+              >
+                <img
+                  src="/images/btn_app_store.png"
+                  alt="AppStore"
+                  height="40px"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.android.chrome&hl=in&gl=US"
+                class="btn p-1"
+                target="_BLANK"
+              >
+                <img
+                  src="/images/btn_play_store.png"
+                  alt="PlayStore"
+                  height="40px"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-outline-secondary btn-block rounded-pill"
+              onclick="closeModal(notSupport)"
+            >
+              Tetap Akses
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- not support modal -->
+
+    <!-- start script -->
+    <script src="/themes/theme-app.js?v=20245"></script>
+
+    <script src="/themes/themesv2.js?v=20245"></script>
+
+    <script>
+      var notSupport = document.getElementById("notSupport");
+      function checkBrowser() {
+        if (
+          navigator.userAgent.indexOf("UCBrowser") != -1 ||
+          navigator.userAgent.indexOf("MiuiBrowser") != -1 ||
+          navigator.userAgent.indexOf("OppoBrowser") != -1
+        ) {
+          showModal(notSupport);
+          if (loader) {
+            loader.style.display = "none";
+          }
+        }
+      }
+      checkBrowser();
+    </script>
+
+    <script>
+      function startCountdown(targetDate) {
+        const elements = {
+          days: document.getElementById("days"),
+          hours: document.getElementById("hours"),
+          minutes: document.getElementById("minutes"),
+          seconds: document.getElementById("seconds"),
+        };
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const countdownDate = new Date(targetDate).getTime();
+          const timeLeft = countdownDate - now;
+
+          if (timeLeft < 0) {
+            Object.values(elements).forEach((el) => (el.innerHTML = "00"));
+            return;
+          }
+
+          const timeData = {
+            days: Math.floor(timeLeft / (1000 * 60 * 60 * 24)),
+            hours: Math.floor(
+              (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            ),
+            minutes: Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)),
+            seconds: Math.floor((timeLeft % (1000 * 60)) / 1000),
+          };
+
+          requestAnimationFrame(() => {
+            Object.keys(elements).forEach((key) => {
+              if (!isNaN(timeData[key])) {
+                elements[key].innerHTML = String(timeData[key]).padStart(
+                  2,
+                  "0"
+                );
+              }
+            });
+          });
+        }
+
+        // Pastikan angka tidak NaN sebelum interval pertama berjalan
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
+
+      startCountdown("2025-04-04T00:00:00");
+    </script>
+
+    <script>
+      function getGuestName() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const guestName = urlParams.get("name") || "Tamu Undangan";
+        document.getElementById("guestNameSlot").textContent = guestName;
+      }
+
+      // Panggil fungsi saat halaman dimuat
+      window.onload = getGuestName;
+    </script>
+
+    <!-- end script -->
+  </body>
+</html>
